@@ -1,0 +1,66 @@
+
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+  <!-- Content Header (Page header) -->
+
+
+
+
+
+
+  <div class="card">
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-primarynew shadow mb-3">
+      <div class="container">
+        <h1>user order Table</h1>
+      </div>
+    </nav>
+    <!-- /.navbar -->
+
+
+
+    <!-- /.card-header -->
+    <div class="card-body">
+      <div *ngIf="orderList.length>0"></div>
+      <table id="example1" class="table table-bordered table-striped">
+        <thead>
+          <tr>
+            <th>Order Id</th>
+            <th>Order Date</th>
+            <th>Mrp Price</th>
+            <th>Quantity</th>
+            <th>Total price</th>
+            <th>Order Status</th>
+            <th>Payment Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let order of orderList">
+            <td>{{order?.orderId}}</td>
+            <td>{{getDate(order?.orderedDate)}}</td>
+            <td>{{order?.mrpPrice}}</td>
+            <td>{{order?.quantity}}</td>
+            <td>{{order?.totalPrice}}</td>
+            <td>{{order?.orderStatus}}</td>
+            <td>{{order?.paymentStatus}}</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th>Order Id</th>
+            <th>Order Date</th>
+            <th>Mrp Price</th>
+            <th>Quantity</th>
+            <th>Total price</th>
+            <th>Order Status</th>
+            <th>Payment Status</th>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+
+
+
+    <!-- /.card -->
+  </div>
+  <!-- /.col -->

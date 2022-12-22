@@ -1,0 +1,61 @@
+.wrapper {
+  width: 100%;
+}
+
+#content {
+  width: 100%;
+  padding: 0;
+  min-height: 0vh;
+  transition: all 0.3s;
+}
+
+.d-flex {
+  display: flex!important;
+  flex-direction: column;
+  width: 100%;
+}
+img.product-image {
+  width: 700px;
+  padding-right: 40%;
+}
+
+
+
+.row {
+  width: 100%;
+}
+
+.field input {
+  font-size: 16px;
+  line-height: 28px;
+  padding: 8px 16px;
+  width: 100%;
+  min-height: 44px;
+  border: unset;
+  border-radius: 4px;
+  outline-color: rgb(84 105 212 / 0.5);
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+              rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+              rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+              rgba(60, 66, 87, 0.16) 0px 0px 0px 1px,
+              rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+              rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+              rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+}
+.field-checkbox input {
+  width: 20px;
+  height: 15px;
+  margin-right: 5px;
+  box-shadow: unset;
+  min-height: unset;
+}
+.field-checkbox label {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+.mt-4 {
+  margin-top: 1.5rem!important;
+  padding-right: 350px;
+}
